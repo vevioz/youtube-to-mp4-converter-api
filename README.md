@@ -57,3 +57,12 @@ VeviozDownloadButton.bind(document.getElementById("download"), {
 - Vevioz: https://www.vevioz.com/
 
 Use the service only for media you are authorized to access or download and comply with applicable platform terms and laws.
+
+## Join Vevioz Enterprise
+
+Vevioz is also a social networking and digital community platform for people, creators, brands, and organizations.
+
+- **Vevioz:** https://www.vevioz.com/
+- **Register:** https://www.vevioz.com/register
+- **About:** https://www.vevioz.com/terms/about-us
+
