@@ -1,22 +1,52 @@
-# Super Fast YouTube to MP3/MP4 Converter API
+# Vevioz Downloader API
 
-A simple way to convert Youtube videos to mp3/mp4 using API service. Get quality like 320 kbps, 256 kbps, 192 kbps, 128 kbps mp3 format for all devices.
+The official, current Vevioz downloader integration is available at:
 
-Conversion is instant even in seconds for hours lenght videos no wait.
+**https://api.vevioz.com/**
 
-Here is a simple auto responsive[For All Devices] iframe code to easily embed to your websites and enjoy best ever converter for free.
+Vevioz provides a responsive iframe, JavaScript Button SDK, and REST API v1 for MP3 audio, MP4 video, metadata, format discovery, and download-job workflows.
 
-MP3 Converter API Code:
+## Current REST endpoints
 
-```<iframe src="https://api.vevioz.com/api/button/mp3/iiMrs3vOm_w" width="100%" height="100%" allowtransparency="true" scrolling="no" style="border:none"></iframe>```
+```text
+GET  https://api.vevioz.com/api/v1/info?url=YOUTUBE_URL
+POST https://api.vevioz.com/api/v1/jobs
+GET  https://api.vevioz.com/api/v1/jobs/{job_id}?token=ACCESS_TOKEN
+GET  https://api.vevioz.com/api/v1/status
+```
 
-MP4, WEbM, 3Gp & Flv Video Converter API Code:
+## Quick JavaScript integration
 
-```<iframe src="https://api.vevioz.com/api/button/videos/iiMrs3vOm_w" width="100%" height="100%" allowtransparency="true" scrolling="no" style="border:none"></iframe>```
+```html
+<button id="download" type="button">Download MP3/MP4</button>
+<script src="https://api.vevioz.com/static/vevioz-download-button.js?v=6"></script>
+<script>
+VeviozDownloadButton.bind(document.getElementById("download"), {
+  url: "https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID"
+});
+</script>
+```
 
-Please replace YouTube-Video-ID with dynamic video id value.
+## Responsive iframe
 
-Please write to us for any query or support : admin@vevioz.com
+```html
+<iframe
+  id="vevioz-api"
+  src="https://api.vevioz.com/YOUTUBE_VIDEO_ID"
+  title="Vevioz Downloader"
+  loading="lazy"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allow="clipboard-write"
+  sandbox="allow-scripts allow-forms allow-downloads allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+  style="width:100%;height:720px;border:0">
+</iframe>
+```
 
-Official API Websites: 
-https://api.vevioz.com/developers
+## Official resources
+
+- API: https://api.vevioz.com/
+- Status: https://api.vevioz.com/status
+- Main integration repository: https://github.com/vevioz/Super-Fast-Free-YouTube-to-MP3-and-MP4-Converter-API
+- Vevioz: https://www.vevioz.com/
+
+Use the service only for media you are authorized to access or download and comply with applicable platform terms and laws.
